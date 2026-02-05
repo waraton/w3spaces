@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box ;
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background:linear-gradient(rgba(25, 0 ,0, 0.5), rgba(25, 0,0 ,0.5)),
+  url(https://africanarguments.org/wp-content/uploads/2012/08/Museveni_AA.jpg) center/cover border-box border-box no-repeat ;
+  font: 30px/1.5 serif;
+}
+blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  position: relative;
+  font-weight: bold;
+}
+blockquote :not(.quote){
+  border: 1px solid;
+  margin-top: 30px;
+  font-family: helvetica,sans-serif;
+  padding: 10px  30px;
+  font-size: 16px;
+  background-color: #de0d;
+  color: white;
+}
+
+blockquote .quote{
+  font-style: italic;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-shadow: 0 0 2px black;
+}
+
+blockquote .quote::before {
+  content: '\2019';
+  color: gold;
+  font-size: 14rem;
+  line-height: 30px;
+  font-family: serif;
+  position: absolute;
+  left: -5%;
+  top: 10%;
+}

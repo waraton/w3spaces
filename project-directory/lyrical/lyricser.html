@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="lyrics>zer">
+<!--  <link rel="stylesheet" href="style.css">-->
+  <title>lyrics >xer</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /* Body style */
+    body{
+      min-height: 100vh;
+      background-color: skyblue;
+      display: grid;
+      place-content: center;
+    }
+    main{
+      background-color: aliceblue;
+      height: 95vh;
+      padding: 1rem ;
+      display: grid;
+      place-content: center;
+    }
+    figure{
+      width: 85vw;
+      display: grid;
+      height: 85vh;
+      border-radius: .5rem;
+      justify-content: stretch;
+      grid-template-rows: 1fr max-content;
+      overflow: hidden;
+    }
+    audio{
+      grid-row: -2/-1;
+      align-self: center;
+      background-color: white;
+      min-width: 0;
+      width: 100%;
+    }
+    figcaption{
+      border-radius: .5rem;
+      display: grid;
+      color: orange;
+      filter: blur(.1mm) brightness(1.2);
+      text-shadow: .1rem .1rem white;
+      place-content: center;
+      padding: 1rem;
+      text-align: center;
+      font: bold 11vmax/.95 forte,'french script mt','brush script mt',cursive;
+      user-select: none;
+      transition: 1s;
+      background:linear-gradient(blue,orange);
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+
+<body>
+<main>
+  <figure>
+    <audio src="https://github.com/waraton/Welcome/blob/9d508662218b7f84e858269fa06d033db671fbad/Lyrical/Our-God-Is-Good.mp3" controls loop></audio>
+    <figcaption>OUR GOD IS GOOD TO US<br><code>Jaming</code></figcaption>
+  </figure>
+</main>
+
+</body>
+
+</html>
+<script src="interactivity.js" type="module">
+
+</script>

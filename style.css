@@ -1,0 +1,101 @@
+/* Place your CSS styles in this file */
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+  font: 400 100%/1.75 sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0,128,0,.4) 0,rgba(0,64,0,.2) 100%) center / cover,
+  url(./IMG_20211221_075939_994_transcpr.jpg) center / cover;
+}
+h1,h2,h3 {
+  text-align: center;
+  font-family: "times new roman", sans-serif;
+  font-weight: 700;
+  color : cyan ;
+  border-bottom: 2px solid ;
+}
+section h2, section h3{
+  text-align: left;
+  width: fit-content;
+  font-size: 2rem;
+  margin-left: 4rem;
+}
+nav {
+  position: fixed;
+  padding: 10px 15px;
+  background-color: green;
+  color: white;
+  font-size: 1.4rem;
+  inset: 0 0;
+  height: fit-content;
+  transition: .2s linear;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav .navbtn{
+  padding: 5px 20px;
+  border: none;
+  background-color: green;
+  border-radius: 0%;
+  font-size: 16px;
+  color: white;
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+main{
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: clamp(320px,95vw,850px);
+}
+main #myName{
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-size: 45px;
+}
+main p{
+  padding: 0 30px;
+  margin-top: 2rem;
+  font-size: 24px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+.btncontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btncontainer a{
+  margin: 5px;
+  padding: 10px 20px;
+  color: white;
+  background-color: green;
+  font-size: 1rem;
+  transition: .2s;
+  margin-top: 49px
+}
+.btncontainer a:hover{
+  text-decoration: underline double 1px;
+  text-decoration-skip-ink: none;
+}
+body > section{
+  padding: 0 30px;
+}

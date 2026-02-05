@@ -1,0 +1,99 @@
+html{
+  font: 70%/1.25 Sans-Serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: skyblue ;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: Border-box ;
+}
+.certificate {
+  --cert-blue: #024ad8;
+  width: 600px;
+  min-width: 600px;
+  object-fit: scale-down;
+  text-align: center;
+  padding: 0 30px;
+  background-image: linear-gradient(
+          rgb(250, 250, 255) 0 95%,
+          var(--cert-blue) 95% 100%
+  );
+  opacity: 0.9;
+  margin: 2em;
+}
+
+p {
+  margin-block: 5px;
+}
+header {
+  padding-top: 30px;
+}
+.logos {
+  text-align: center;
+}
+.logo:first-child {
+  border-right: 2px solid;
+  font-size: 1.25em;
+}
+.logo:last-child {
+  font-size: 0.5em;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25em 1em;
+}
+.logo svg {
+  width: 35px;
+  margin: 0 5px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3em;
+  margin: 15px 0;
+}
+
+.name {
+  color: var(--cert-blue);
+  font-size: 2.25em;
+  display: block;
+  font-weight: bold;
+}
+p:has(.name) {
+  font-size: 1.35em;
+}
+p .course {
+  display: block;
+  font-weight: bold;
+  margin-block: 10px;
+}
+p:has(time) {
+  font-size: 0.75em;
+}
+
+.signatory {
+  font-size: 1.05em;
+}
+.signatory::before {
+  content: "[signature]";
+  font-family: "script ms", cursive;
+  display: block;
+  border-bottom: 2px solid;
+  padding: 0.25em;
+  width: 200px;
+  margin: 0 auto;
+  font-size: 1.25em;
+}
+#serialNo {
+  font-size: 0.5em;
+  color: grey;
+  margin-block: 30px;
+}
