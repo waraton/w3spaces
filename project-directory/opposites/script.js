@@ -1,4 +1,4 @@
-import { opposites } from "./words-collection.js"
+import { opposites } from "words-collection.js"
 
 let counter = 1;
 let getFrom = [];
@@ -84,13 +84,13 @@ function nextQns(a) {
         ['red',total]
     ]
     document.querySelector('.dataRep').style.background = `conic-gradient(
-    ${stops[0][0]} 
+    ${stops[0][0]}
       0
       ${(stops[0][1] / total)*(max - .25)}%,
-    ${stops[1][0]} 
-      ${(stops[0][1] / total)*(max + .25)}% 
+    ${stops[1][0]}
+      ${(stops[0][1] / total)*(max + .25)}%
       ${(stops[1][1] / total)*(max - .25)}%,
-    ${stops[2][0]} 
+    ${stops[2][0]}
       ${(stops[1][1] / total)*(max + .25)}%
       ${(stops[2][1] / total)*(max - .25)}%,
     white

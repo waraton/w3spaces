@@ -38,3 +38,17 @@ const placeHolder = document.querySelector(".whoIAm");
 setInterval(() => {
     placeHolder.textContent = whoIAm[Math.floor(Math.random() * (whoIAm.length +1))]
 }, 2523);
+
+const hack = document.getElementById('hack');
+async function fetchData() {
+    try {
+      const a = await fetch(`https://api.viewbits.com/v1/jester?mode=random`);
+      const b = a.json();
+      console.log(`sucessful`);
+        hack.textContent = b
+    } catch (error) {
+        console.log(`errorous`, error);
+    }
+    return b;
+  }
+fetchData()

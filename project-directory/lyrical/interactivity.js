@@ -1,4 +1,4 @@
-import {timeStamps} from "./timeline.js";
+import {timeStamps} from "timeline.js";
 
 const audio = document.querySelector(`audio`);
 const textArea = document.querySelector("figcaption");

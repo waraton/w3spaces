@@ -13,7 +13,7 @@ body{
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(rgba(0,128,0,.4) 0,rgba(0,64,0,.2) 100%) center / cover,
-  url(./IMG_20211221_075939_994_transcpr.jpg) center / cover;
+  url(IMG_20211221_075939_994_transcpr.jpg) center / cover;
 }
 h1,h2,h3 {
   text-align: center;
