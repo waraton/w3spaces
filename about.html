@@ -8,13 +8,6 @@
   <link rel="shortcut icon" href="/IMG_20211221_075939_994_transcpr.jpg">
   <title>Who Am I</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: sans-serif;
-    }
-
     header {
       display: grid;
       place-content: center;
@@ -23,38 +16,44 @@
           repeating-linear-gradient(25deg, royalblue, #2320, teal 5%)center/cover,
           repeating-linear-gradient(115deg, violet, #2320, orange 5%)center/cover,
           grey center/cover no-repeat;
-      height: 70vh;
-      max-height: 40rem;
-      padding: 1rem;
+          height: 70vh;
+          max-height: 55vh;
+      padding: 1.5rem;
       font-size: 3rem;
-      color: darkgray;
+      /* color: darkgray; */
       color: white;
       text-transform: uppercase;
       text-align: center;
-      border-radius: 0% 0% 45% 45%;
+      border-radius: 0% 0% 25% 75%;
     }
 
     body {
       background-color: skyblue;
       color: white;
-      font-size: 1.5rem;
+      font-size: 2rem;
       max-width: 756px;
       margin: auto;
+      background-image: linear-gradient(white, green,blue,orange, grey);
+      min-height: 100vh;
     }
 
     main p * {
       margin-left: 2rem;
       color: transparent;
       display: block;
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       text-transform: capitalize;
       -webkit-text-stroke: gray 1px;
     }
 
     main p {
+      outline: auto;
       padding: 1rem;
       text-align: left;
       transform: .21s;
+      /* rotate: 25deg; */
+      background-color: skyblue;
+      margin-inline: 5%;
     }
   </style>
 </head>
@@ -67,5 +66,5 @@
   <p>I am <span class="whoIAm">Waran Newton Mono Korsuk</span></p>
 </main>
 </body>
-<script src="scripts.js"></script>
+<script src="script.js"></script>
 </html >

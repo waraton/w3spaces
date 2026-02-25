@@ -1,4 +1,8 @@
 /* Place your CSS styles in this file */
+@font-face {
+  font-family: motion;
+  src: url(../../fonts/Redosky.otf);
+}
 *{
   margin: 0%;
   padding: 0%;
@@ -17,7 +21,7 @@ body{
 }
 h1,h2,h3 {
   text-align: center;
-  font-family: "times new roman", sans-serif;
+  font-family: motion, "times new roman", sans-serif;
   font-weight: 700;
   color : cyan ;
   border-bottom: 2px solid ;
